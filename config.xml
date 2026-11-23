@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain.com/LofiRadio" version="1.0.0" viewmode="fullscreen">
+    <icon src="icon.png"/>
+    <content src="index.html"/>
+    <name>Lofi Radio</name>
+    <description>A relaxing lofi and ambient radio streamer for Samsung TV</description>
+    <tizen:application id="tizen.lofiradio" package="LofiRadioApp" required_version="3.0"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+</widget>

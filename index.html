@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tizen Lofi Radio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎧 Tizen Lofi & Ambient Radio</h1>
+            <p id="now-playing">Select a station and press OK to play</p>
+        </header>
+
+        <main>
+            <div class="station-grid" id="station-list">
+                <div class="station-card active" data-url="https://stream.zeno.fm/f3wvbbqmdg8uv">
+                    <div class="icon">☕</div>
+                    <h3>Lofi Hip Hop</h3>
+                    <p>Relaxing beats to chill/study to</p>
+                </div>
+                <div class="station-card" data-url="https://ice2.somafm.com/groovesalad-128-mp3">
+                    <div class="icon">🌌</div>
+                    <h3>SomaFM: Groove Salad</h3>
+                    <p>Ambient / downtrodden chillout</p>
+                </div>
+                <div class="station-card" data-url="https://ice4.somafm.com/secretagent-128-mp3">
+                    <div class="icon">🕵️</div>
+                    <h3>SomaFM: Secret Agent</h3>
+                    <p>The soundtrack for your spy life</p>
+                </div>
+                <div class="station-card" data-url="https://stream.zeno.fm/0r0xa792gy8uv">
+                    <div class="icon">🌧️</div>
+                    <h3>Rain & Chill</h3>
+                    <p>Ambient rain sounds & soft lofi</p>
+                </div>
+            </div>
+
+            <div class="player-controls">
+                <audio id="audio-stream" preload="none"></audio>
+                <div class="status-indicator">
+                    <span id="play-state">⏹️ Stopped</span>
+                    <span id="volume-indicator">Volume: 80%</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Use <b>Arrow Keys</b> to browse stations • <b>OK / Enter</b> to Play/Pause • <b>Back</b> to Exit</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
